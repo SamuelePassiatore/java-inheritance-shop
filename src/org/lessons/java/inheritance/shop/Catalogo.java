@@ -1,6 +1,5 @@
 package org.lessons.java.inheritance.shop;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Catalogo {
@@ -61,12 +60,12 @@ public class Catalogo {
 	                    System.out.println("Wireless: ");
 	                    boolean wireless = scanner.nextBoolean();
 	                    catalogo[posizione] = new Cuffia(codice, nome, marca, prezzo, iva, colore, wireless);
-	                    posizione++;
 	                    System.out.println("Nuova cuffia inserita:");
 	                    break;
 	            }
 	            
 	            posizione++;
+	            System.out.println("Elementi nel catalogo: " + posizione);
 	        }
 	        
 	        System.out.println("Catalogo:");
