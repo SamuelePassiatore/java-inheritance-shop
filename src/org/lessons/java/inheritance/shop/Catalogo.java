@@ -49,7 +49,7 @@ public class Catalogo {
 	                case 2:
 	                    System.out.println("Dimensioni: ");
 	                    double dimensioni = scanner.nextDouble();
-	                    System.out.println("Smart: ");
+	                    System.out.println("La televisione è smart? ");
 	                    boolean smart = scanner.nextBoolean();
 	                    catalogo[posizione] = new Televisore(codice, nome, marca, prezzo, iva, dimensioni, smart);
 	                    System.out.println("Nuovo televisore inserito:");
@@ -57,7 +57,7 @@ public class Catalogo {
 	                case 3:
 	                    System.out.println("Colore: ");
 	                    String colore = scanner.next();
-	                    System.out.println("Wireless: ");
+	                    System.out.println("Le cuffie sono wireless? ");
 	                    boolean wireless = scanner.nextBoolean();
 	                    catalogo[posizione] = new Cuffia(codice, nome, marca, prezzo, iva, colore, wireless);
 	                    System.out.println("Nuova cuffia inserita:");
@@ -69,10 +69,11 @@ public class Catalogo {
 	        }
 	        
 	        System.out.println("Catalogo:");
+	        int numeroProdotto = 1;
 	        for (int i = 0; i < catalogo.length; i++) {
 	            Prodotto prodotto = catalogo[i];
 	            if (prodotto != null) {
-	                System.out.println(prodotto);
+	                System.out.println("Prodotto " + numeroProdotto++ + ": " + prodotto);
 	            }
 	        }
 			
