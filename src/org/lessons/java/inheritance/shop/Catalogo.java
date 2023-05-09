@@ -67,7 +67,6 @@ public class Catalogo {
 	            }
 	            
 	            posizione++;
-	            System.out.println("Elementi nel catalogo: " + posizione);
 	        }
 	        
 	        System.out.println("Catalogo:");
