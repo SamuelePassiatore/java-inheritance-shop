@@ -70,7 +70,7 @@ public class Catalogo {
 	        
 	        System.out.println("Catalogo:");
 	        int numeroProdotto = 1;
-	        for (int i = 0; i < catalogo.length; i++) {
+	        for (int i = 0; i < posizione; i++) {
 	            Prodotto prodotto = catalogo[i];
 	            if (prodotto != null) {
 	                System.out.println("Prodotto " + numeroProdotto++ + ": " + prodotto);
